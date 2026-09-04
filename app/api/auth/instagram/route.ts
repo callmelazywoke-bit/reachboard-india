@@ -4,8 +4,8 @@ import { OAUTH_STATE_COOKIE, createOAuthState, sessionCookieOptions } from '@/li
 export const dynamic = 'force-dynamic';
 
 export async function GET(request: Request) {
-  const clientId = process.env.INSTAGRAM_CLIENT_ID;
-  const clientSecret = process.env.INSTAGRAM_CLIENT_SECRET;
+  const clientId = process.env.INSTAGRAM_CLIENT_ID=1538830917540546;
+  const clientSecret = process.env.INSTAGRAM_CLIENT_SECRET=75aeebd5074139a3ddca706130fd35f1;
 
   if (!clientId || !clientSecret) {
     return NextResponse.json(
