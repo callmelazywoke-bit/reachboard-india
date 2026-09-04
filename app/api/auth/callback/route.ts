@@ -35,7 +35,7 @@ export async function GET(request: Request) {
   const code = searchParams.get('code');
   const errorParam = searchParams.get('error');
   const baseUrl = 'https://reachboard-india-n1dr.bolt.host';
-  const redirectUri = `${baseUrl}/api/auth/callback`;
+  const redirectUri = `${baseUrl}/api/auth/instagram/callback`;
 
   if (errorParam) {
     return NextResponse.redirect(`${baseUrl}/?error=${encodeURIComponent(errorParam)}`);
