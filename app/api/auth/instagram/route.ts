@@ -17,7 +17,7 @@ export async function GET(request: Request) {
     );
   }
 
-  const redirectUri = 'https://reachboard-india-n1dr.bolt.host/api/auth/callback';
+const redirectUri = `${baseUrl}/api/auth/instagram/callback`;
 
   const state = createOAuthState();
 
