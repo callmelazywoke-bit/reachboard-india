@@ -17,6 +17,11 @@ export async function GET(request: Request) {
     );
   }
 
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL ||
+  process.env.NEXT_PUBLIC_APP_URL ||
+  'https://reachboard-india-n1dr.bolt.host';
+
 const redirectUri = `${baseUrl}/api/auth/instagram/callback`;
 
   const state = createOAuthState();
